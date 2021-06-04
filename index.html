@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="title">Calculator</div>
+            <div class="menu">Menu</div>
+        </div>
+        <div class="calculator">
+              <!--row 0-->
+            <input type="text" class="display" value="" disabled />
+            <!--row 1-->
+            <button class="key--operator" data-action="add" value="+">+</button>
+            <button class="key--operator" data-action="sub" value="-">-</button>
+            <button class="key--operator" data-action="mul" value="*"> &times;</button>
+            <button class="key--operator" data-action="div" value="/">&divide;</button> 
+            <!--row 2-->
+            <button class="item7" value="7">7</button>
+            <button class="item8" value="8">8</button>
+            <button class="item9" value="9">9</button>
+            <button class="key--operator" data-action="mod" value="%">%</button>
+            <!--row 3-->
+            <button class="item4" value="4">4</button>
+            <button class="item5" value="5">5</button>
+            <button class="item6" value="6">6</button>
+            <button class="key--operator" data-action="pow" value="^">^</button>
+            <!--row 4-->
+            <button class="item1" value="1">1</button>
+            <button class="item2" value="2">2</button>
+            <button class="item3" value="3">3</button>
+            <button class="item_equal key--operator" data-action="calculate">=</button>
+            <!--row 5-->
+            <button class="item0" value="0">0</button>
+            <button class="item_dot" value=".">.</button>
+            <button class="itemAC" >AC</button>
+            
+        
+        </div>  
+        <div class="history-block" id="history">
+            <div class="history-title">
+                <p>History</p>
+            </div>
+            <div class="history-text">
+                <ul>
+        
+                </ul>
+
+            </div>
+            <div class="clear">
+                <button id="clear" ><strong>Clear</strong></button>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="row">
+                <div class="footer-text">
+                  <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+               <a href="https://github.com/sush1998">Sushant Mahalle</a>.
+                  </p>
+                </div>  
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
