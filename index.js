@@ -140,6 +140,7 @@ function resetCalculator()
     calculator.operator=null;
     console.log("Reset");
     history.unshift("-------------");
+    calculator.displayValue='0';
     updateDisplay();
 }
 
