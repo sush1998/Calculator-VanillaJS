@@ -221,4 +221,6 @@ clear_btn.addEventListener('click', function()
     history.length=0;
     console.log("cleared");
     history_block.innerHTML=updateHistoryBlock(history);
+    calculator.displayValue='0'
+    updateDisplay();
 });
